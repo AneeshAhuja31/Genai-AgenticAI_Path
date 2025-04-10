@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block title%}Results{%endblock%}
+{%block content%}
+<h1>
+    Based on the marks you have {{results}}
+</h1>
+    {%if results>=50%}
+    <h1>You have passed with {{results}} marks</h1>
+    {%else%}
+    <h2>You have failed with {{results}} marks</h2>
+    {%endif%}
+{%endblock%}

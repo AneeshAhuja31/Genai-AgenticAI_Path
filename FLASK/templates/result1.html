@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block title%}Result1{%endblock%}
+{%block content%}
+<h1>Final Results</h1>
+<body>
+    
+    {%for key,val in results.items()%}
+    
+        {#This is the comment section#}
+        <h2>{{key}}</h2>
+        <h2>{{val}}</h2>
+    
+    {%endfor%}
+    
+</body>
+{%endblock%}

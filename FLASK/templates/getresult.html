@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block title%}Get Results{%endblock%}
+{%block content%}
+<h1>HTML Forces</h1>
+<form action="/submit" method="post">
+    <label for="science">Science: </label>
+    <input type="text" id="science" name="science"><br><br>
+    <label for="maths">Maths: </label>
+    <input type="text" id="maths" name="maths"><br><br>
+    <label for="sst">SST: </label>
+    <input type="text" id="sst" name="sst"><br><br>
+    <label for="english">English: </label>
+    <input type="text" id="english" name="english"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit"</p>
+{%endblock%}

@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%block title%}Items{%endblock%}
+{%block content%}
+<h1>Your tasks include: </h1>
+
+<table border="1">
+    <tr>
+        <th>Sno.</th>
+        <th>Tasks</th>
+        <th>Description</th>
+    </tr>
+    {%for item in items%}
+        <tr>
+            <td>{{item['id']}}</td>
+            <td>{{item['name']}}</td>
+            <td>{{item['description']}}</td>
+            <td>
+                <form action="/items/{{item['id']}}" method="DELETE">
+                    <button type="submit">Delete</button>
+                </form>
+                <form action="/items/{{item['id']}}" method="PUT">
+                    <button type="submit">Update</button>
+                </form>
+            </td>
+        </tr>
+    {%endfor%}
+</table>
+{%endblock%}

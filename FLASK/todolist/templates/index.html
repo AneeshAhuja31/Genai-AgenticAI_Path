@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block title%}Title{%endblock%}
+{%block content%}
+<h1>Welcome to the To Do List App</h1>
+
+<a href="{{url_for('get_items')}}">
+    <button>Task List</button>
+</a>
+{%endblock%}
