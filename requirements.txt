@@ -24,3 +24,5 @@ scikeras
 transformers
 wikipedia
 arxiv
+reflex
+duckduckgo-search
