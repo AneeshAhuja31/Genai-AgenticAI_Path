@@ -22,3 +22,5 @@ nltk==3.8.1
 gensim
 scikeras
 transformers
+wikipedia
+arxiv
