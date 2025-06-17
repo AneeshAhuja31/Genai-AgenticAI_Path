@@ -14,6 +14,7 @@ arxiv_wrapper = ArxivAPIWrapper(top_k_results=1,doc_content_chars_max=200) #use 
 arxiv = ArxivQueryRun(api_wrapper=arxiv_wrapper) #use RUNNERS to exrcute operations using wrappers
 
 wiki_wrapper = WikipediaAPIWrapper(top_k_results=1,doc_content_chars_max=200)
+
 wiki = WikipediaQueryRun(api_wrapper=wiki_wrapper)
 
 search = DuckDuckGoSearchRun(name="Search")
